@@ -1,58 +1,15 @@
+# Exercise 1
 def product_of_digits(num):
-    num = abs(num)
-    product = 1
+    pass
 
-    # Special case: if num is 0 → product is 0
-    if num == 0:
-        return 0
-
-    while num > 0:
-        digit = num % 10
-        product *= digit
-        num //= 10
-
-    return product
-
-
+# Exercise 2
 def sum_even_or_odd(num):
-    num = abs(num)
-    total = 0
+    pass
 
-    while num > 0:
-        digit = num % 10
-        total += digit
-        num //= 10
-
-    if total % 2 == 0:
-        return "Even"
-    else:
-        return "Odd"
-
-
+# Exercise 3
 def contains_five(num):
-    num = abs(num)
+    pass
 
-    # Special case: num = 0
-    if num == 0:
-        return False
-
-    while num > 0:
-        digit = num % 10
-        if digit == 5:
-            return True
-        num //= 10
-
-    return False
-
-
+# Exercise 4
 def sum_even_digits(num):
-    num = abs(num)
-    total = 0
-
-    while num > 0:
-        digit = num % 10
-        if digit % 2 == 0:
-            total += digit
-        num //= 10
-
-    return total
+    pass
