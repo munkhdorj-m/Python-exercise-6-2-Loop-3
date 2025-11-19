@@ -9,19 +9,18 @@ https://docs.google.com/presentation/d/1cRZd43s_xyNBLZ6vgFiUILPUMMtWDtBO/edit?us
 
 **Problem:**
 
-Find nth power of a given number.
+Find the product of all its digits.
 
 **Example:**
-3 to the power of 4 is 3^4=81
 
-	Input: 3 4
-	Output: 81
- 
- 	Input: 5 2
-	Output: 25
- 
-  	Input: 10 5
-	Output: 10000
+	Input: 234
+	Output: 24     # 2 × 3 × 4
+	
+	Input: 105
+	Output: 0      # 1 × 0 × 5 = 0
+	
+	Input: 7
+	Output: 7
 
 ---
 
@@ -29,19 +28,18 @@ Find nth power of a given number.
 
 **Problem:**
 
-Find reverse of a given number.
+Find the sum of its digits and check whether the sum is even or odd.
 
 **Example:**
 
-	Input: 1234
-	Output: 4321
- 
- 	Input: 19283
-	Output: 38291
- 
-  	Input: 1
-	Output: 1
-
+	Input: 1234  # sum = 10
+	Output: Even
+	
+	Input: 246
+	Output: Even
+	
+	Input: 135
+	Output: Odd
 
 ---
 
@@ -49,17 +47,39 @@ Find reverse of a given number.
 
 **Problem:**
 
-Convert given binary number to decimal number.
+Check whether the number contains the digit 5.
+Return True or False.
 
 **Example**
 
- 	Input: 1010
-  	Output: 10
- 
-  	Input: 110111
-  	Output: 55
- 
-  	Input: 11111111
-  	Output: 255
+	Input: 1542
+	Output: True
+	
+	Input: 9087
+	Output: False
+	
+	Input: 5
+	Output: True
+
+---
+
+## Exercise 4
+
+**Problem:**
+
+Check whether the number contains the digit 5.
+Return True or False.
+
+**Example**
+
+	Input: 1542
+	Output: True
+	
+	Input: 9087
+	Output: False
+	
+	Input: 5
+	Output: True
+
 ---
 
