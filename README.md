@@ -1,4 +1,4 @@
-# Python LOOP 3
+# Python LOOP 3 (While)
 
 Python Loops PPT:
 https://docs.google.com/presentation/d/1cRZd43s_xyNBLZ6vgFiUILPUMMtWDtBO/edit?usp=sharing&ouid=118175980541210638913&rtpof=true&sd=true
