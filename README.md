@@ -3,6 +3,9 @@
 Python Loops PPT:
 https://docs.google.com/presentation/d/1cRZd43s_xyNBLZ6vgFiUILPUMMtWDtBO/edit?usp=sharing&ouid=118175980541210638913&rtpof=true&sd=true
 
+While Loop Examples:
+https://drive.google.com/file/d/1wE9btH1mrV4VBsVlcKxRfj6E_E6cYKep/view?usp=sharing
+
 ---
 
 ## Exercise 1
