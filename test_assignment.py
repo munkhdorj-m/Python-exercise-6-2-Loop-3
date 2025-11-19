@@ -1,40 +1,72 @@
 import pytest
 import inspect
-from assignment import nth_power, reverse_number, binary_to_decimal
+from assignment import (
+    product_of_digits,
+    sum_even_or_odd,
+    contains_five,
+    sum_even_digits
+)
 
 def check_contains_loop(function):
     source = inspect.getsource(function)
     return 'for' in source or 'while' in source
 
-@pytest.mark.parametrize("base, exponent, expected", [
-    (3, 4, 81),
-    (5, 2, 25),
-    (10, 5, 100000),
-    (2, 10, 1024),
-    (7, 0, 1)
-])
-def test1(base, exponent, expected):
-    assert nth_power(base, exponent) == expected
-    assert check_contains_loop(nth_power)
 
-@pytest.mark.parametrize("input, expected", [
-    (1234, 4321),
-    (19283, 38291),
-    (1, 1),
-    (987654, 456789),
-    (0, 0)
+# ---------------------------
+# Exercise 1: Product of digits
+# ---------------------------
+@pytest.mark.parametrize("num, expected", [
+    (234, 24),
+    (105, 0),
+    (7, 7),
+    (999, 729),
+    (5012, 0)
 ])
-def test2(input, expected):
-    assert reverse_number(input) == expected
-    assert check_contains_loop(reverse_number)
+def test1(num, expected):
+    assert product_of_digits(num) == expected
+    assert check_contains_loop(product_of_digits)
 
-@pytest.mark.parametrize("binary_input, expected", [
-    (1010, 10),
-    (110111, 55),
-    (11111111, 255),
-    (100000, 32),
-    (0, 0)
+
+# ---------------------------
+# Exercise 2: Sum of digits (even or odd)
+# ---------------------------
+@pytest.mark.parametrize("num, expected", [
+    (1234, "Even"),
+    (246, "Even"),
+    (135, "Odd"),
+    (1001, "Even"),
+    (9, "Odd")
 ])
-def test3(binary_input, expected):
-    assert binary_to_decimal(binary_input) == expected
-    assert check_contains_loop(binary_to_decimal)  
+def test2(num, expected):
+    assert sum_even_or_odd(num) == expected
+    assert check_contains_loop(sum_even_or_odd)
+
+
+# ---------------------------
+# Exercise 3: Contains digit 5
+# ---------------------------
+@pytest.mark.parametrize("num, expected", [
+    (1542, True),
+    (9087, False),
+    (5, True),
+    (123456789, True),
+    (4004, False)
+])
+def test3(num, expected):
+    assert contains_five(num) == expected
+    assert check_contains_loop(contains_five)
+
+
+# ---------------------------
+# Exercise 4: Sum of even digits
+# ---------------------------
+@pytest.mark.parametrize("num, expected", [
+    (48273, 14),
+    (13579, 0),
+    (0, 0),
+    (2222, 8),
+    (9081726354, 20)   # even digits: 0+8+2+6+4 = 20
+])
+def test4(num, expected):
+    assert sum_even_digits(num) == expected
+    assert check_contains_loop(sum_even_digits)
