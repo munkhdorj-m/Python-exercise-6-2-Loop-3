@@ -1,16 +1,58 @@
-# You can remove 'pass' if you written code in the function 
+def product_of_digits(num):
+    num = abs(num)
+    product = 1
 
-# Exercise 1
-def nth_power(base, exponent):
-    # Write your code here
-    pass
+    # Special case: if num is 0 → product is 0
+    if num == 0:
+        return 0
 
-# Exercise 2
-def reverse_number(num):
-    # Write your code here
-    pass
+    while num > 0:
+        digit = num % 10
+        product *= digit
+        num //= 10
 
-# Exercise 3
-def binary_to_decimal(binary_num):
-    # Write your code here
-    pass
+    return product
+
+
+def sum_even_or_odd(num):
+    num = abs(num)
+    total = 0
+
+    while num > 0:
+        digit = num % 10
+        total += digit
+        num //= 10
+
+    if total % 2 == 0:
+        return "Even"
+    else:
+        return "Odd"
+
+
+def contains_five(num):
+    num = abs(num)
+
+    # Special case: num = 0
+    if num == 0:
+        return False
+
+    while num > 0:
+        digit = num % 10
+        if digit == 5:
+            return True
+        num //= 10
+
+    return False
+
+
+def sum_even_digits(num):
+    num = abs(num)
+    total = 0
+
+    while num > 0:
+        digit = num % 10
+        if digit % 2 == 0:
+            total += digit
+        num //= 10
+
+    return total
