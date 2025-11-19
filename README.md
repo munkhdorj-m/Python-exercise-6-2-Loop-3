@@ -70,19 +70,18 @@ Return True or False.
 
 **Problem:**
 
-Check whether the number contains the digit 5.
-Return True or False.
+Find and return sum of even digits
 
 **Example**
 
-	Input: 1542
-	Output: True
+	Input: 1429
+	Output: 6
 	
-	Input: 9087
-	Output: False
+	Input: 98
+	Output: 8
 	
 	Input: 5
-	Output: True
+	Output: 0
 
 ---
 
